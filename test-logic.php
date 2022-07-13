@@ -47,9 +47,6 @@ console.log(separateUnits(9865321));
 /* End Soal Nomor 3 */
 
 /* Soal Nomor 4 */
-int a = 3;
-int b = 7;
-
 int temp = a;
 a = b;
 b = temp;
@@ -75,11 +72,37 @@ function terbilang ($angka) {
 /* End Soal Nomor 5 */
 
 /* Soal Nomor 6 */
--
+function isPositive(value) {
+    return value > 2;
+   }
+
+   var filtered = [1, 4, 7, 9, 12].filter(isPositive);
+   console.log(filtered);
 /* End Soal Nomor 6 */
 
 /* Soal Nomor 7 */
--
+function maxIndexDiff(arr, n)
+{
+    let maxDiff = -1;
+    let i, j;
+  
+    for (i = 0; i < n; ++i) 
+    {
+        for (j = n - 1; j > i; --j)
+        {
+            if (arr[j] > arr[i] && maxDiff < (j - i))
+                maxDiff = j - i;
+        }
+    }
+  
+    return maxDiff;
+}
+  
+    let arr = [ 1, 4, 7, 9, 12];
+    let n = arr.length;
+    let maxDiff = maxIndexDiff(arr, n);
+    
+    console.log(maxDiff);
 /* End Soal Nomor 7 */
 
 /* Soal Nomor 8 */
