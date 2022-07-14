@@ -47,9 +47,10 @@ console.log(separateUnits(9865321));
 /* End Soal Nomor 3 */
 
 /* Soal Nomor 4 */
-int temp = a;
-a = b;
-b = temp;
+    let a = 3;
+    let b = 7;
+    [a, b] = [b, a];
+    console.log(a, b);
 /* End Soal Nomor 4 */
 
 /* Soal Nomor 5 */
